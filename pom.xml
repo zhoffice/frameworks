@@ -127,15 +127,17 @@ org.eclipse.jdt.core.compiler.compliance=1.6
       </pluginRepository>
    </pluginRepositories>
    <distributionManagement>
-      <repository>
-         <id>releases</id>
-         <url>${releases.repo}</url>
-      </repository>
-     <snapshotRepository>
-         <id>snapshots</id>
-         <url>${snapshots.repo}</url>
-      </snapshotRepository>
-   </distributionManagement>
+		<repository>
+			<id>nexus-releases</id>
+			<name>Nexus Release Repository</name>
+			<url>http://127.0.0.1:8081/nexus/content/repositories/releases/</url>
+		</repository>
+		<snapshotRepository>
+			<id>nexus-snapshots</id>
+			<name>Nexus Snapshot Repository</name>
+			<url>http://127.0.0.1:8081/nexus/content/repositories/snapshots/</url>
+		</snapshotRepository>
+	</distributionManagement>
    <properties>
       <project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
    </properties>
